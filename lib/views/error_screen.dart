@@ -8,10 +8,14 @@ class ErrorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Column(
+    return Scaffold(
+        body: Column(
       children: [
         const Text("Page Not Found"),
-        TextButton(child: const Text("Click Here to Continue"),onPressed: () => context.go(HomeScreen.path),),
+        TextButton(
+          child: const Text("Click Here to Continue"),
+          onPressed: () => context.go(HomeScreen.path),
+        ),
       ],
     ));
   }

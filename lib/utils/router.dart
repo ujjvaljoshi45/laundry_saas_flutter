@@ -5,16 +5,16 @@ import 'package:laundry_saas_flutter/views/splash_screen.dart';
 
 abstract class Router {
   final GoRouter router = GoRouter(
-      routes: [
-    GoRoute(
-      path: SplashScreen.path,
-      builder: (context, state) => const SplashScreen(),
-    ),
-    GoRoute(
-      path: HomeScreen.path,
-      builder: (context, state) => const HomeScreen(),
-    ),
-  ],
-  errorBuilder: (context, state) => const ErrorScreen(),
+    routes: [
+      GoRoute(
+        path: SplashScreen.path,
+        builder: (context, state) => const SplashScreen(),
+      ),
+      GoRoute(
+        path: HomeScreen.path,
+        builder: (context, state) => const HomeScreen(),
+      ),
+    ],
+    errorBuilder: (context, state) => const ErrorScreen(),
   );
 }
